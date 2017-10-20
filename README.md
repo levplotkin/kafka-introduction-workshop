@@ -42,10 +42,10 @@ Optional https://github.com/yahoo/kafka-manager/releases
 Instructions how to install kafka monitor:
 Download sources
 Install sbt
-#./sbt clean dist
+$./sbt clean dist
 Unzip .../kafka-manager-1.3.3.14_zip/target/universal/kafka-manager-1.3.3.14.zip
 Chmod +x bin/kafka-monitor
-#  bin/kafka-monitor
+$bin/kafka-monitor
 Optional: Kafka tool 
 wget http://www.kafkatool.com/download/kafkatool.sh
 
@@ -64,10 +64,10 @@ I will send updated topics list, before the workshop
 
 Connector API test
 
-#cp ....kafka-workshop-demo-1.0-SNAPSHOT.jar ./kafka_2.11-0.11.0.1/libs/
-#./connect-standalone.sh ./demo/src/main/resources/connect-standalone.properties ./demo/src/main/resources/connect-file-source.properties 
-#./connect-standalone.sh ./demo/src/main/resources/connect-standalone.properties ./demo/src/main/resources/connect-file-sink.properties 
+$cp ....kafka-workshop-demo-1.0-SNAPSHOT.jar ./kafka_2.11-0.11.0.1/libs/
+$./connect-standalone.sh ./demo/src/main/resources/connect-standalone.properties ./demo/src/main/resources/connect-file-source.properties 
+$./connect-standalone.sh ./demo/src/main/resources/connect-standalone.properties ./demo/src/main/resources/connect-file-sink.properties 
 
 
-# echo "msg 1" >> test-source.log
-# cat  test-sink.log
+$ echo "msg 1" >> test-source.log
+$ cat  test-sink.log
