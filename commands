@@ -29,3 +29,5 @@ echo "msg 4" >> /home/lev/dev/kafka-workshop/test-source.log
 
 cat /home/lev/dev/kafka-workshop/test-sink.log
 
+dev/kafka-workshop/kafka_2.11-0.11.0.1/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TextLinesTopic
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
