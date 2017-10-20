@@ -73,12 +73,3 @@ I will send updated topics list, before the workshop
 ```
 
 
-Connector API test
-
-$cp ....kafka-workshop-demo-1.0-SNAPSHOT.jar ./kafka_2.11-0.11.0.1/libs/
-$./connect-standalone.sh ./demo/src/main/resources/connect-standalone.properties ./demo/src/main/resources/connect-file-source.properties 
-$./connect-standalone.sh ./demo/src/main/resources/connect-standalone.properties ./demo/src/main/resources/connect-file-sink.properties 
-
-
-$ echo "msg 1" >> test-source.log
-$ cat  test-sink.log
